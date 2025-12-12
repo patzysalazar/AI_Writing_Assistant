@@ -1,0 +1,19 @@
+package org.example.ai_writing_assistant;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class AIWritingApplication extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(AIWritingApplication.class.getResource("Writing-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 500, 500);
+        stage.setTitle("AI Writing Assistant");
+        stage.setScene(scene);
+        stage.show();
+    }
+}

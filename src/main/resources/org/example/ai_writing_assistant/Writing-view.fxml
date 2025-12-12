@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="AIBox" alignment="CENTER" prefHeight="346.0" prefWidth="429.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="org.example.ai_writing_assistant.WritingController">
+    <fx:define>
+        <ToggleGroup fx:id="Modes"/>
+    </fx:define>
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+
+   <Label text="Write a Prompt to Generate a Response " />
+   <TextArea fx:id="UserInput" prefHeight="121.0" prefWidth="267.0" promptText="Write your text here......" VBox.vgrow="ALWAYS">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+
+   </TextArea>
+
+   <RadioButton fx:id="CreativeMode" toggleGroup="$Modes" mnemonicParsing="false" text="Creative" VBox.vgrow="ALWAYS" />
+   <RadioButton fx:id="ProfessionalMode" toggleGroup="$Modes" layoutX="192.0" layoutY="93.0" mnemonicParsing="false" text="Professional" VBox.vgrow="ALWAYS" />
+   <RadioButton fx:id="AcademicMode" toggleGroup="$Modes" layoutX="192.0" layoutY="89.0" mnemonicParsing="false" text="Academic" VBox.vgrow="ALWAYS" />
+  <Button fx:id="GenerateButton" onAction="#onButtonClick" text="Generate" VBox.vgrow="ALWAYS" />
+   <TextArea fx:id="Output" prefHeight="200.0" prefWidth="200.0" promptText="AI gererated response......" VBox.vgrow="ALWAYS" />
+</VBox>
+
+
