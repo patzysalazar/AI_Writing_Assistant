@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="776bb1d8-de3d-4c0b-a5fe-743a07ca91bc" name="Changes" comment="project 3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/AcademicMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/CreativeMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/ProfessionalMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/WritingMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/API/AIWritingAPIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/API/AIWritingAPIClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/WritingRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/WritingRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/WritingResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ai_writing_assistant/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Description_Files/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ai_writing_assistant/REPORT.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Description_Files/REPORT.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ai_writing_assistant/WritingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ai_writing_assistant/WritingController.java" afterDir="false" />
-    </list>
+    <list default="true" id="776bb1d8-de3d-4c0b-a5fe-743a07ca91bc" name="Changes" comment="Final Project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,11 +84,20 @@
       <option name="project" value="LOCAL" />
       <updated>1765558687443</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Final Project">
+      <option name="closed" value="true" />
+      <created>1765852613835</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765852613835</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="project 3" />
+    <MESSAGE value="Final Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Project" />
   </component>
 </project>
