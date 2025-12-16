@@ -1,7 +1,7 @@
 package org.example.ai_writing_assistant;
 
 import API.AIWritingAPIClient;
-import Model.WritingRequest;
+import Model.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
@@ -12,7 +12,7 @@ import javax.swing.*;
 import java.io.IOException;
 import java.text.ParseException;
 
-
+//essentially calls the model and the writing modes and deals with the output of clicking the buttons and outputting a response based on the input
 public class WritingController {
 
     @FXML
@@ -49,26 +49,31 @@ public class WritingController {
 
     @FXML
     protected void onButtonClick() throws IOException, ParseException {
-
+//if something is missing
         if(UserInput.getText().isBlank()){
             Output.setText("Enter a prompt please");
             return;
         }
-
         if(Modes.getSelectedToggle() == null ){
             Output.setText("Select a mode before continuing");
             return;
         }
-        //selection will be our mode
-        //UserInput.getText will be our input
-        //tokes stays the same
-        WritingRequest request = new WritingRequest(UserInput.getText(),((RadioButton) Modes.getSelectedToggle()).getText(), 500);
-        Output.setText(Client.Authentication(request));
+        //mode selection
+        WritingMode ModeType = null;
+        if(Modes.getSelectedToggle() != null && UserInput.getText() != null && CreativeMode.isSelected()) {
+            ModeType = new CreativeMode();
+        }
+        else if(Modes.getSelectedToggle() != null && UserInput.getText() != null && ProfessionalMode.isSelected()) {
+            ModeType = new ProfessionalMode();
+        }
+        else if(Modes.getSelectedToggle() != null && UserInput.getText() != null && AcademicMode.isSelected()) {
+            ModeType = new AcademicMode();
+        }
+        //call to AI
+        if (ModeType != null){
+            Output.setText(ModeType.sendToAI(UserInput.getText()));
 
-        //GenerateButton.setDisable(false);
-
-
-
+        }
 
     }
 }

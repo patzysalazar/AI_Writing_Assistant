@@ -2,11 +2,12 @@ package Model;
 
 //prompt
 //selection of mode
+//needed to store all info needed to make the request to the AI API
 public class WritingRequest {
 //fields
     protected  String prompt;
     protected  String mode;
-    protected  int tokens = 500;
+    protected  int tokens = 75;
 //constructor - initializes objects
     public WritingRequest(String prompt, String mode, int tokens){
        this.prompt = prompt;
