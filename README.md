@@ -1,4 +1,4 @@
-# Project Title
+# AI Writing Assistant
 
 ## Setup
 1. Get API key from [website]
